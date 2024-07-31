@@ -1,0 +1,67 @@
+## my configuration properties
+#
+## configuration file
+#
+#custom:
+#  app:
+#    properties:
+#      name: custom-app
+#      version: 1.0.0
+#      url: http://localhost:8080
+#      serverName: myServer
+#      firstname: John
+#      lastname: Doe
+#      username: johndoee
+#      password: password
+#      countries:
+#        - USA
+#        - Canada
+#        - Mexico
+#        - UK
+#        - Germany
+#        - France
+#  #server
+#server:
+#  port: 8080
+#
+##  # logging
+##logging:
+##  level:
+##    root: TRACE
+##    bank:
+##      #            controller: DEBUG
+##      #            service: INFO
+##      #            repository: WARN
+##      bankapplication: FATAL
+##  pattern:
+##    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+##    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+##
+##  #    log to file
+##  file:
+##    name: C:\Users\USER\IdeaProjects\EA\lesson13\lab\BankApplication\log\bank-application.log
+##    max-size: 10MB
+#
+#
+##      actuator
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        #        include: "*"
+#        include: [ "health", "env", "beans", "configprops", "mappings","shutdown","prometheus", "scheduledtasks" ]
+#      cors:
+#        allowed-origins: "*"
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#    health:
+#      show-details: always
+##spring:
+##  application:
+##    name: BankApplication
+##    environment: dev
+##    version: 1.0.0
+##    label: master
+#
